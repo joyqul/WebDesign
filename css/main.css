@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+header, nav, ul, li, section, article, footer {
+	text-align:center;
+	border: solid 1px #C36;
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+nav {
+	background-color:#FCF;
+	margin:auto;
+	padding:10px;
+}
+
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+nav li {
+	display:inline;
+	padding:5px;
+}
+
+nav li a {
+	color: #000;
+	text-decoration:none;
+}
+
+nav li a:hover {
+	color: #FFF;
+}
+
+section {
+	width:80%;
+	margin:auto;
+}
+
+article {
+	display:inline-block;
+	width:180px;
+	margin-left:-3px;
+	margin-right:-3px;
+}
+
+article:hover {
+	cursor:pointer;
+	background:#CCF;
+}
+
+p {
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+footer {
+	position:absolute;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+}

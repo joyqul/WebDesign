@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.article_a {
+	color: #000;
+	text-decoration:none;
+	width:180px;
+}
+
+.article_a:hover {
+	color: #FFC;
+}
