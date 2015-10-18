@@ -1,11 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
-.article_a {
-	color: #000;
+.article_has_link {
+	color: #FCF;
 	text-decoration:none;
+    background:rgba(147,106,123,.9);
 	width:180px;
 }
 
-.article_a:hover {
-	color: #FFC;
+.article_has_link:hover {
+	color: rgb(147,126,123);
+	cursor:pointer;
+	background:#FCF;
+}
+
+.article_no_link {
+    color: #333;
+    background:rgba(147,126,123,.9);
+}
+
+.article_no_link:hover {
+    cursor:auto;
 }
