@@ -28,7 +28,6 @@ body {
     background-image:url("../images/background.jpg");
     background-repeat:no-repeat;
     background-position:right bottom;
-    background-attachment:fixed;
     background-color:rgb(147,126,123);
     font-family: 'Exo', sans-serif;
 }
