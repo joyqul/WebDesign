@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <link rel="stylesheet" type="text/css" href="../css/Oct23.css" />
+        <link href='https://fonts.googleapis.com/css?family=Exo:400,200italic,700' rel='stylesheet' type='text/css'>
+        <title>Oct 23, try css</title>
+    </head>
+
+    <body>
+<!--
+	排版屬性:position
+    static; 完全不動，不能設定上下左右，不可設定上下左右
+    relative; 相對位置
+    	ex: top:30px; 代表的是它距離上個物件的 top 有 30px
+    absolute; 絕對位置
+    fixed; 固定位置，可設定上下左右
+    
+    position: relative + position: absolute
+    這樣才會有相互定位的效果，如果是 absolute+static 那 absolute 會去追瀏覽器本身而非那個區塊
+    
+    float: left; 的時候，如果是高度不規則的情形，他會先往右再往下
+    (該家個範例了)
+    
+    Pinterest 是每個 column 去做 float
+    然後每個 column 裡面再去丟圖片
+    因為如果直接讓圖片 float 就不會這麼漂亮惹
+    
+    box-sizing 
+    border-box(content+padding+border)
+    因為在 CSS 裡面 padding & border 偶爾會設定，那就會忘記他本來的 size
+    因此出現了這個比較新的概念，讓她不會長胖
+    
+    結束 float 屬性
+    clear;both;
+
+    z-index usage
+    http://www.w3schools.com/cssref/pr_pos_z-index.asp
+-->
+	<header>
+    	<div id="h_c">
+            <a href="../index.html"><img src="../images/p1.jpg" alt="logo" /></a>
+            <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#artwork">artwork</a>
+                    <ul>
+                        <li><a href="#design">design</a>
+                        	<ul>
+                            	<li><a href="#design2015">2015</a></li>
+                            	<li><a href="#design2014">2014</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#manga">manga</a>
+                        	<ul>
+                            	<li><a href="#manga2015">2015</a></li>
+                            	<li><a href="#manga2014">2014</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#paints">paints</a>
+                        	<ul>
+                            	<li><a href="#paints2015">2015</a></li>
+                            	<li><a href="#paints2014">2014</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <p>Copyright&copy; 2015 Joyqul Chen All rights reserved.</p>
+    </div>
+    </header>
+    <main>
+        <h1>Joyqul's artwork</h1>
+        <section>
+            <h2 id="about">about</h2>
+            <article>
+                <p>日安，這裡是目前就讀於資工系大四的 Joyqul</p>
+                <p>本頁面收錄了我從 2014 至 2015 年的部份創作</p>
+                <p>聯絡資訊：</p>
+                <img src="../images/email.svg" class="icon" alt="email icon"><p class="inline">joyqul.tw@gmail.com</p><br />
+                <a href="https://www.facebook.com/joyqul.tw"><img src="../images/facebook.svg" class="icon" alt="email icon"></a><p class="inline">joyqul.tw</p><br />
+                <a href="https://www.plurk.com/joyqul"><img src="../images/plurk.svg" class="icon" alt="email icon"></a><p class="inline">joyqul</p>
+                <div class="img_box"><img src="../images/p1.jpg" alt="My picture" /></div>
+            </article>
+        </section>
+        <section>
+            <h2 id="artwork">artwork</h2>
+
+            <div class="box" id="design2015">
+                <div class="max_box">
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/6038765_orig.png" alt="演講海報" />
+                </div>
+                <div class="max_box">
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/524855_orig.jpg" alt="IF 投稿" />
+                </div>
+            </div>
+            <div class="box" id="design2014">
+                <div class="max_box">
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/1310999_orig.png" alt="LOGO design"/>
+                </div>
+                <div class="min_box">
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/8582648_orig.png" alt="PYCON 紀念品設計" />
+                </div>
+                <div class="min_box">
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/245849.png?379" alt="PYCON 紀念品設計" />
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/5711158.png?371" alt="PYCON 紀念品設計" />
+                </div>
+                <div class="min_box">
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/1400949515.jpg" alt="時間管理作業設計" />
+                </div>
+                <div class="min_box">
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/6217161_orig.png" alt="汪汪社紀念品設計" />
+                </div>
+                <div class="max_box">
+                    <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/2061710_orig.png" alt="資料夾設計" />
+                </div>
+            </div>
+
+            <div class="box" id="manga2015">
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/KMiUwYf.jpg" alt="LGBT 的日常" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/tazi9zR.jpg" alt="我做了一個夢" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/uHWvdwA.jpg" alt="cycle" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/ZYKIV8G.jpg" alt="朋友" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/gyWcBgE.jpg" alt="Avalon 推廣" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/rnLB04l.jpg" alt="JC" />
+                </div>
+            </div>
+            <div class="box" id="manga2014">
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/WR64hrE.jpg" alt="學弟本" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/DRKlDJd.jpg" alt="畫圖這件小事" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/83DYA6Q.jpg" alt="LINE" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/PlY9jOf.jpg" alt="心" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/re20WFU.jpg" alt="靈魂" />
+                </div>
+                <div class="middle_box">
+                    <img src="http://i.imgur.com/DwEf0cd.jpg" alt="安價學弟" />
+                </div>
+            </div>
+
+            <div class="box" id="paints2015">
+                <div class="middle_box"><img src="../images/background.jpg" alt="拉麵"></div>
+                <div class="middle_box"><img src="http://i.imgur.com/mjfukp9.jpg" alt="振也和海馬蝦握壽司"></div>
+                <div class="middle_box"><img src="http://i.imgur.com/0esBDTz.jpg" alt="投稿圖"></div>
+                <div class="middle_box"><img src="http://i.imgur.com/uNHSDRU.jpg" alt="認識的實況主"></div>
+                <div class="middle_box"><img src="http://i.imgur.com/p3jNFlq.jpg" alt="55AC 和 AEF7"></div>
+                <div class="middle_box"><img src="http://i.imgur.com/4NHEsfS.jpg" alt="女裝少年"></div>
+                <div class="max_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/9268653_orig.jpg" alt="振也和亨太郎"></div>
+                <div class="min_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/9084427_orig.png" alt="朕也和海馬蝦握壽司"></div>
+                <div class="min_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/6316372_orig.jpeg" alt="點點展"></div>
+            </div>
+            <div id="paints2014" class="box">
+                <div class="middle_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/6874511_orig.jpg" alt="百繪之最後的王"></div>
+                <div class="middle_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/6035852_orig.jpg" alt="百繪之天使"></div>
+                <div class="middle_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/9473535_orig.jpg" alt="百繪之聖痕"></div>
+                <div class="middle_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/4770405_orig.jpg" alt="百繪之時鐘"></div>
+                <div class="middle_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/682805_orig.jpg" alt="LINE 熊大擬人"></div>
+                <div class="middle_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/9234184_orig.jpg" alt="55AC 和 AEF7"></div>
+                <div class="max_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/5540444_orig.jpg" alt="梅露可物語投稿"></div>
+                <div class="max_box"><img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/5569518_orig.jpg" alt="55AC 和 AEF7"></div>
+            </div>
+        </section>
+    </main>
+	<footer>
+    </footer>
+    
+	</body>
+</html>
