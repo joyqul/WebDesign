@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Exo:400,200italic,700' rel='stylesheet' type='text/css'>
+    <title>Notes Oct 23</title>
+</head>
+<body>
+    <section>
+    <p>排版屬性:position</p>
+    <p>static; 完全不動，不能設定上下左右，不可設定上下左右</p>
+    <p>relative; 相對位置</p>
+    <p>	ex: top:30px; 代表的是它距離上個物件的 top 有 30px</p>
+    <p>absolute; 絕對位置</p>
+    <p>fixed; 固定位置，可設定上下左右</p>
+    <p></p>
+    <p>position: relative + position: absolute</p>
+    <p>這樣才會有相互定位的效果，如果是 absolute+static 那 absolute 會去追瀏覽器本身而非那個區塊</p>
+    <p></p>
+    <p>float: left; 的時候，如果是高度不規則的情形，他會先往右再往下</p>
+    <p>(該家個範例了)</p>
+    <p></p>
+    <p>Pinterest 是每個 column 去做 float</p>
+    <p>然後每個 column 裡面再去丟圖片</p>
+    <p>因為如果直接讓圖片 float 就不會這麼漂亮惹</p>
+    <p></p>
+    <p>box-sizing </p>
+    <p>border-box(content+padding+border)</p>
+    <p>因為在 CSS 裡面 padding 和 border 偶爾會設定，那就會忘記他本來的 size</p>
+    <p>因此出現了這個比較新的概念，讓她不會長胖</p>
+    <p></p>
+    <p>結束 float 屬性</p>
+    <p>clear;both;</p>
+    <a href="http://www.w3schools.com/cssref/pr_pos_z-index.asp"><p>z-index usage</p></a>
+    <a href="../index.html">
+    <article class="article_has_link">Go back</article>
+    </a>
+    </section>
+    
+</body>
+</html>
