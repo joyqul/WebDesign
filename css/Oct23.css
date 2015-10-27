@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(Oct23_menu.css);
+
 h1, h2 {
     text-transform: uppercase;
 	text-align:center;
@@ -11,6 +12,11 @@ h2 {
     color: #FF9;
 	line-height: 50px; /* padding +20, line-height +60, total: +80 */
     border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
 }
 
 body {
@@ -132,7 +138,7 @@ footer {
     width: 100%;
 }
 
-.max_box p, .min_box p, .min_box p {
+.max_box p, .middle_box p, .min_box p {
     padding: 110px 60px;
 }
 
@@ -150,3 +156,61 @@ footer {
     padding: 0;
     margin: 0;
 }
+
+.black, .middle_black {
+    position: absolute;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.black p, .middle_black p {
+    display: none;
+}
+
+.zoom {
+    position: absolute;
+    height: 50px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.middle_black {
+    height: 450px;
+}
+
+.max_box:hover img, .middle_box:hover img, .min_box:hover img {
+    filter: blur(5px);
+    width: 105%;
+}
+
+.max_box:hover .black, .middle_box:hover .middle_black, .min_box:hover .black {
+    width: 480px;
+    background: rgba(0,0,0,.8);
+    z-index: 100;
+}
+
+.max_box:hover .black>p, .middle_box:hover .middle_black>p, .min_box:hover .black>p {
+    display: inline-block;
+    line-height: 50px;
+    font: #FFF;
+}
+
+.max_box:hover .zoom, .middle_box:hover .zoom, .min_box:hover .zoom {
+    width: 50px;
+    background: #FF9;
+    background-image: url("../images/zoom.svg");
+    background-size: 50px 50px;
+    z-index: 200;
+}
+
+.middle_box:hover .middle_black{
+    width: 320px;
+    background: rgba(0,0,0,.8);
+}
+
+.min_box:hover .black {
+    width: 240px;
+    background: rgba(0,0,0,.8);
+}
+
+
