@@ -160,7 +160,11 @@ footer {
 .black, .middle_black {
     position: absolute;
     height: 300px;
+    width: 0;
     box-sizing: border-box;
+    -webkit-transition: width .5s;
+    transition: width .5s;
+    transition-timing-function: ease;
 }
 
 .black p, .middle_black p {
