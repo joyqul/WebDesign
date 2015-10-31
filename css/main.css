@@ -168,22 +168,23 @@ footer {
 
 .note, .work {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 180px;
+    height: 135px;
+    padding: 0;
     z-index: 200;
     background: rgba(255,255,255,.8);
-    border-radius: 30px;
-    top: 180px;
+    border-radius: 5px;
+    left: 0;
     background-size: 45px 45px;
     background-repeat: no-repeat;
     background-position: 9px 6px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 1s ease;
+    background-position: 50% 50%;
 }
 
 .note {
-    left: 25px;
     background-image: url("../images/note.svg");
 }
 
@@ -194,6 +195,6 @@ footer {
 }
 
 .work {
-    right: 25px;
+    top: 135px;
     background-image: url("../images/html.svg");
 }
