@@ -17,6 +17,7 @@ header img {
 }
 
 header img:hover {
+    -webkit-filter: invert(100%);
     filter: invert(100%);
 }
 
@@ -187,6 +188,7 @@ footer {
 
 .note:hover, .work:hover {
     cursor: pointer;
+    -webkit-filter: invert(100%);
     filter: invert(100%);
 }
 
