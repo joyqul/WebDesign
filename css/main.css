@@ -135,6 +135,7 @@ article:hover .note, article:hover .work {
 }
 
 article:hover img {
+    -webkit-filter: blur(1px);
     filter: blur(1px);
 }
 
