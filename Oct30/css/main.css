@@ -2,10 +2,24 @@
 @import url("menu.css");
 /* CSS Document */
 
+h1, h2 {
+    text-transform: uppercase;
+	text-align:center;
+}
+
+h2 {
+    width: 980px;
+    background: rgba(0,0,0,.8);
+    color: #FF9;
+	line-height: 50px; /* padding +20, line-height +60, total: +80 */
+    border-radius: 5px;
+}
+
 body{
 	padding:0;
 	margin:0;
-	font-family: Georgia, "Times New Roman", Times, serif, "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU";
+    font-family: 'Exo', sans-serif, "微軟正黑體";
+    background: #FF9;
 }
 
 header{
@@ -19,7 +33,7 @@ header{
 	z-index:1000;
 }
 
-a{
+a {
 	color:#3CC;
 	text-decoration:none;	
 }
@@ -32,6 +46,7 @@ main{
 	width:980px;
 	margin:auto;
 	margin-top:70px;	
+    padding-left: 200px;
 }
 
 footer{
@@ -49,7 +64,15 @@ footer{
 	text-align:center;
 }
 
-#h_c > img{
+#h_c p {
+    font-size: 12px;
+    color: #FF9;
+    position: absolute;
+    float: left;
+    bottom: 0;
+}
+
+header img{
 	display: block;
 	margin: auto;
 	padding: 20px;
@@ -59,6 +82,43 @@ footer{
 nav{
 	width:50%;
 }
+
+/*==================article=====================*/
+article {
+    border: solid 1px #000;
+    position: relative;
+    padding: 20px;
+    height: 220px;
+}
+
+article img {
+    border-radius: 10px;
+    border: solid 1px #000;
+}
+
+.img_box {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.icon {
+    height:24px;
+    border:0;
+    border-radius:0;
+    vertical-align: text-top;
+    margin: 0px 6px 4px 0px;
+}
+
+.inline {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+}
+
 
 /*==================section=====================*/
 
@@ -70,6 +130,7 @@ section {
 	margin:auto;
 	width:100%;
 	text-align: center;
+    background: rgba(0,0,0,.8);
 	
 	-webkit-column-count: 3; /* chrome, safari, opera */
 	-moz-column-count: 3; /* firefox */
@@ -88,7 +149,7 @@ section h1 {
 section img {
 	width: 100%;
 	box-sizing: border-box;
-	border: solid 1px #CCC;
+	border: solid 3px #000;
 }
 
 .box {
@@ -100,8 +161,9 @@ section img {
 	position: absolute;
 	width: 50px;
 	height: 50px;
-	top: 10px;
+	top: 25px;
 	right: 10px;
+    z-index: 200;
 }
 
 .intro a {
@@ -134,7 +196,6 @@ section img {
 	}
 }
 
-
 .box:hover .intro{
 	animation-name: ex1030;
 	animation-duration: 0.5s;
@@ -143,4 +204,25 @@ section img {
 
 .box:hover a {
 	display: block;
+}
+
+.box:hover .black {
+    background: rgba(0,0,0,.8);
+}
+
+.box:hover .black p {
+    display: block;
+}
+
+.black {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 150;
+    top:0;
+}
+
+.black p {
+    color: #FFF;
+    display: none;
 }
