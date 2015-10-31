@@ -31,7 +31,7 @@ header {
     width: 120px;
     height: 100%;
     top: 0;
-    background: rgba(60, 60, 60, .8);
+	background: rgba(80, 80, 80, 0.8);
     z-index: 10000;
 }
 
@@ -183,6 +183,7 @@ footer {
 }
 
 .max_box:hover img, .middle_box:hover img, .min_box:hover img {
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     width: 105%;
 }
