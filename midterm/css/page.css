@@ -6,7 +6,7 @@ body {
     background: rgb(89,62,62);
     background-image: url("../images/texture.png");
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px 2px rgb(89,62,62);
+    text-shadow: 1px 1px 6px rgb(89,62,62);
 }
 
 /*================== header =================*/
@@ -14,7 +14,7 @@ body {
 header {
     width: 100%;
     height: 100px;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.4);
 }
 
 .les {
@@ -86,7 +86,7 @@ section {
     width: 80%;
     height: auto;
     margin: auto;
-    background: rgb(254,231,177);
+	background: rgba(255,173,244,.5);
     border-radius: 10px;
     -webkit-box-sizing: border-box; /* prefix for safari */
     -moz-box-sizing: border-box; /* prefix for firefox */
@@ -110,7 +110,7 @@ article {
 }
 
 .large {
-    min-height: 1150px;
+    min-height: 900px;
 }
 
 .image_box{
@@ -125,9 +125,18 @@ article {
     height: auto;
 }
 
+/*================== google map =======================*/
+
+#map {
+    width: 750px;
+    height: 500px;
+    border-radius: 10px;
+}
+
 /*=================== picture boxes =====================*/
 
 .box {
+    position: relative;
     display: block;
     margin: 20px 0px;
     float: left;
@@ -139,7 +148,7 @@ article {
 
 .min_box {
     float: left;
-    height: 500px;
+    height: 400px;
     width: 25%;
     overflow: hidden;
     border: solid 10px rgb(89,62,62);
@@ -158,12 +167,11 @@ article {
 
 .black {
     position: absolute;
-    height: 500px;
+    height: 400px;
     width: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
     visibility: hidden;
     opacity: 0;
     -webkit-transition:visibility 0s, opacity 0.5s ease;
@@ -176,13 +184,13 @@ article {
 }
 
 .min_box:hover img {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
     width: 105%;
 }
 
 .min_box:hover .black {
-    width: 24%;
+    width: 25%;
     background: rgba(0,0,0,.9);
     z-index: 100;
     visibility: visible;
