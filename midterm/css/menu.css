@@ -1,0 +1,58 @@
+@charset "utf-8";
+nav ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+nav li {
+	float:left;
+	position:relative;
+}
+
+nav li a {
+    text-transform: uppercase;
+	display: block;
+	padding: 10px 20px;
+    color: rgb(157,130,130);
+	text-decoration: none;
+	line-height: 40px; /* padding +20, line-height +60, total: +80 */
+    border: solid 10px rgb(157,130,130);
+    border-width: 10px 0px 0px 0px;
+}
+
+nav li a:not(.highlight):hover {
+    border: solid 10px rgb(255,173,244);
+    border-width: 10px 0px 0px 0px;
+	color: rgb(255,173,244);
+    background: rgb(157,130,130);
+}
+
+nav li ul {
+	position: absolute;
+	display: none;
+	left: 0;
+    top: 100%;
+	margin: 0;
+}
+
+nav ul li:hover > ul { /* first ul inside li */
+	display: block;
+}
+
+nav ul ul a {
+	width: 200px;
+	background: rgba(0,0,0,.8);
+}
+
+
+nav ul ul ul li {
+	height: 61px;
+}
+
+nav ul ul li:hover > ul {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 100%; /* move 上一層的寬度 */
+}
