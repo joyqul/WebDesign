@@ -6,7 +6,6 @@ body {
     background: rgb(89,62,62);
     background-image: url("../images/texture.png");
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px 6px rgb(89,62,62);
 }
 
 /*================== header =================*/

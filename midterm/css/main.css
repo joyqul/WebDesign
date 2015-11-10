@@ -111,3 +111,26 @@ a:hover img {
     -webkit-filter: saturate(400%);
     filter: saturate(400%);
 }
+
+.facebook, .twitter, .google {
+	background-image: url("../images/icons.png");
+	background-size: auto 100%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.twitter {
+    background-position: -50px 0px;
+}
+
+.google {
+    background-position: -100px 0px;
+}
+
+.facebook:hover, .twitter:hover, .google:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
