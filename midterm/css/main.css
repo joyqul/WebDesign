@@ -120,6 +120,7 @@ a:hover img {
     display: inline-block;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    border-radius: 5px;
 }
 
 .twitter {
