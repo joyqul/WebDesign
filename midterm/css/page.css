@@ -76,6 +76,9 @@ nav {
     float: right;
     margin: 0px 3px 0px 0px;
     border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 5px black;
+    -moz-box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px black;
 }
 
 .twitter {
@@ -90,6 +93,9 @@ nav {
 .facebook:hover, .twitter:hover, .google:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
+    -webkit-box-shadow: 1px 1px 5px white;
+    -moz-box-shadow: 1px 1px 5px white;
+    box-shadow: 1px 1px 5px white;
 }
 
 .icons {
