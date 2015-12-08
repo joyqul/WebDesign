@@ -25,7 +25,8 @@ function get_con(file_name) {
 		$.each(data, function(index, en) {
 			var html = '<div class="con">';
 			html += '<img src="' + en['pic'] + '" alt="' + en['title'] + '">';
-            html += '<div class="black"></div>';
+            html += '<a href="' + en['pic'] + '">';
+            html += '<div class="black"></div></a>';
 			html += '<div class="text">' + en['title'] + '</div>';
 			html += '<div class="info">' + en['content'] + '</div>';
             html += '<div class="fav"></div>';
