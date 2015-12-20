@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Multipage template - jQuery Mobile: Design and Develop</title>
+        <link href="css/mobile.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body class="container">
+		<div data-role="page" id="page" data-title="Page 1" data-theme="f">
+			<div data-role="header" data-theme="f">
+                <div data-role="header">
+                    <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-notext ui-btn-f"></a>
+                    <a href="index.html" data-ajax="false" class="ui-btn ui-icon-arrow-r ui-btn-icon-notext ui-btn-f"></a>
+                </div>
+				<h1>Tokyo Project</h1>
+			</div>
+            <div data-role="panel" id="myPanel" data-display="overlay">
+                <ul data-role="listview" data-theme="b">
+                    <li><a href="#page2">2015</a></li>
+                    <li><a href="#page3">2014</a></li>
+                    <li><a href="#page4">2013</a></li>
+                </ul>
+            </div>
+			<div data-role="content">
+                <img src="images/title.png" width="100%" alt="">
+			</div>
+			<div data-role="footer" data-theme="f">
+                Copyright&copy; 2015 Joyqul Chen.
+			</div>
+		</div>
+		<div data-role="page" id="page2" data-title="Page 2" data-theme="f">
+			<div data-role="header" data-theme="f">
+				<h1>2015</h1>
+			</div>
+			<div data-role="content">
+                <img src="https://i.imgur.com/eUuifuA.jpg" width="100%" alt="">
+				<a href="#page" data-transition="flip" class="ui-btn ui-btn-inline ui-btn-f">Back</a>
+				<a href="#page3" class="ui-btn ui-btn-inline ui-btn-f">Next</a>
+			</div>
+			<div data-role="footer" data-theme="f">
+                Copyright&copy; 2015 Joyqul Chen.
+			</div>
+		</div>
+		<div data-role="page" id="page3" data-title="2014" data-theme="f">
+			<div data-role="header" data-theme="f">
+				<h1>2014</h1>
+			</div>
+			<div data-role="content">
+                <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/9473535_orig.jpg" width="100%" alt="">
+				<a href="#page2" data-transition="flip" class="ui-btn ui-btn-inline ui-btn-f">Back</a>
+				<a href="#page4" class="ui-btn ui-btn-inline ui-btn-f">Next</a>
+			</div>
+			<div data-role="footer" data-theme="f">
+                Copyright&copy; 2015 Joyqul Chen.
+			</div>
+		</div>
+		<div data-role="page" id="page4" data-title="2013" data-theme="f">
+			<div data-role="header" data-theme="f">
+				<h1>2013</h1>
+			</div>
+			<div data-role="content">
+                <img src="http://joyqul.weebly.com/uploads/2/3/9/1/23912381/9433216_orig.jpg" width="100%" alt="">
+				<a href="#page3" data-transition="flip" class="ui-btn ui-btn-inline ui-btn-f">Back</a>
+			</div>
+			<div data-role="footer" data-theme="f">
+                Copyright&copy; 2015 Joyqul Chen.
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+.ui-bar-f {
+    color: #FFF;
+    background-color: #333;
+}
+
+.ui-body-f {
+    font-weight: bold;
+    color: #FFF;
+    background-color: #CCC;
+    border: none;
+}
+
+.ui-btn-f {
+    font-weight: bold;
+    color: #FFF;
+    border: none;
+    background-color: #AAA;
+}
+
+.ui-panel-theme-f {
+    font-weight: bold;
+	background-color:#E5D5BC;
+}
+.ui-page-theme-f {
+    font-weight: bold;
+	background-color:#731509;
+}
