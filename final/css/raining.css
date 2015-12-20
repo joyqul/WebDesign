@@ -1,0 +1,17 @@
+.rain {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+}
+.raindrop {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100px;
+    background:#000;
+    z-index: 100;
+    display: none;
+}
