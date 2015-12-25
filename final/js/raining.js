@@ -1,13 +1,19 @@
 $(document).ready(function() {
-    add_raindrop(20);
-    for (var _index = 0; _index < $(".raindrop").length; _index++) {
-        AnimateMotion(_index, ".raindrop", 0, 0, 150, 0);
+    if ($(window).innerWidth() > 1200) {
+        add_raindrop(20);
+        for (var _index = 0; _index < $(".raindrop").length; _index++) {
+            AnimateMotion(_index, ".raindrop", 0, 0, 150, 0);
+        }
     }
     $("h1").mouseenter(function() {
-        $(".raindrop").show();
+        if ($(window).innerWidth() > 1200) {
+            $(".raindrop").show();
+        }
     });
     $("h1").mouseleave(function() {
-        $(".raindrop").hide();
+        if ($(window).innerWidth() > 1200) {
+            $(".raindrop").hide();
+        }
     });
 });
 
