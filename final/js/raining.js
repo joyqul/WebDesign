@@ -36,11 +36,12 @@ function make_delta_form(delta) {
 
 function AnimateMotion(_index, part, delta_height, delta_width, delta_top, delta_left) {
     var gap = _index*10;
+    var _width = Math.floor((Math.random()-Math.random())*5);
     $(part).eq(_index).css({
         top: 0,
         left: gap
     });
-    var _delay = Math.floor((Math.random() * 4000) + 1)
+    var _delay = Math.floor((Math.random() * 2000) + 1)
     var new_top = make_delta_form(delta_top);
     var new_left = make_delta_form(delta_left);
     var new_height = make_delta_form(delta_height);
@@ -51,5 +52,5 @@ function AnimateMotion(_index, part, delta_height, delta_width, delta_top, delta
         height: new_height,
         width: new_width
     }, _delay);
-    window.setTimeout(function(){AnimateMotion(_index, part, delta_height, delta_width, delta_top, delta_left)}, _delay+100);
+    window.setTimeout(function(){AnimateMotion(_index, part, delta_height, _width, delta_top, delta_left)}, _delay+100);
 }
