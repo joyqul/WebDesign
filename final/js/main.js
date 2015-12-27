@@ -4,7 +4,7 @@ $(document).ready(function() {
         re_win();
 	});
     $("h1").mouseenter(function() {
-        $("body").css("background-color", "#BBB");
+        $("body").css("background-color", "#FFF");
     });
     $("h1").mouseleave(function() {
         $("body").css("background-color", "#333");
