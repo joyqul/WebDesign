@@ -24,6 +24,7 @@ h1 {
     color: #FFF;
     z-index: 1000;
     border-top: 4px solid #FFF;
+    margin: 0;
 }
 
 h1:hover {
