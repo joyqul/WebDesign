@@ -1,0 +1,105 @@
+@import url('main.css');
+
+h1 {
+    float: none;
+    text-align: center;
+    border-width: 0px;
+    padding: 20px;
+}
+
+h1:hover {
+    border-width: 0px;
+}
+
+header {
+    background: rgba(0,0,0,.6);
+}
+
+body {
+    background-color: #FFF;
+}
+
+.focus {
+    background: rgba(51, 204, 255, .8);
+}
+
+nav{
+    width:100%;
+    margin:auto;
+    background:rgba(0,0,0,.8);
+    text-align:center;
+}
+
+nav ul{
+    margin:0;
+}
+
+nav ul li{
+    display:block;
+    border-bottom: solid #666 1px;
+    padding: 10px 0;
+}
+
+nav ul li:hover {
+    background: rgba(51, 204, 255, .8);
+}
+
+nav ul li a{
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    padding:0px 30px;
+}
+
+/********** RWD **************/
+@media only screen and (min-width: 768px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    nav {
+        display:block;
+        padding: 10px 0px;
+    }
+    nav ul li {
+        display: inline;
+        border-bottom: 0px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    nav {
+        display:block;
+        padding: 10px 0px;
+    }
+    nav ul li {
+        display: inline;
+        border-bottom: 0px;
+    }
+    .menu {
+        display: none;
+    }
+}

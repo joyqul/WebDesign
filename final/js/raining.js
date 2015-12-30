@@ -1,20 +1,33 @@
 $(document).ready(function() {
     if ($(window).innerWidth() > 1200) {
-        add_raindrop(20);
+        add_raindrop(Math.floor($(".rain").width()/10.5));
         for (var _index = 0; _index < $(".raindrop").length; _index++) {
-            AnimateMotion(_index, ".raindrop", 0, 0, 150, 0);
+            AnimateMotion(_index, ".raindrop", 0, 0, $(".rain").height(), 0);
         }
     }
-    $("h1").mouseenter(function() {
-        if ($(window).innerWidth() > 1200) {
-            $(".raindrop").show();
-        }
-    });
-    $("h1").mouseleave(function() {
-        if ($(window).innerWidth() > 1200) {
-            $(".raindrop").hide();
-        }
-    });
+    if ($(window).innerWidth() > 1200 && $(".box").length == 0) {
+        $(".rain").show();
+        setTimeout(function() {
+            $(".rain").fadeOut();
+        }, 3000);
+    }
+    if ($(window).innerWidth() <= 1200) {}
+    else if ($(".box").length > 0) {
+        $("h1").mouseenter(function() {
+            $(".rain").show();
+        });
+        $("h1").mouseleave(function() {
+            $(".rain").hide();
+        });
+    }
+    else {
+        $("h1").mouseenter(function() {
+            $(".rain").show();
+            setTimeout(function() {
+                $(".rain").fadeOut();
+            }, 3000);
+        });
+    }
 });
 
 function add_raindrop(number) {
