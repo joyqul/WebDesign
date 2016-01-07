@@ -51,7 +51,39 @@ nav ul li a{
     padding:0px 30px;
 }
 
+article {
+    position: relative;
+    background: rgba(0, 0, 0, .8);
+    width: 90%;
+    top: 20px;
+    margin: auto;
+    padding: 20px;
+    color: #FFF;
+}
+
+article img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+}
+
 /********** RWD **************/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For phone */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
