@@ -1,0 +1,75 @@
+@import url('normalize.css');
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.black, .pics a, .pics img {
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+}
+
+.black {
+    background: #000;
+    z-index: -1;
+}
+
+.page, .pics a, .pics img {
+    width: 100%;
+}
+
+.pics img {
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.title {
+    display:block;
+    position: relative;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.title:hover h1, .title:hover h2 {
+    color: #FF0;
+}
+
+.title:hover .block {
+    background: #FF0;
+}
+
+.block, h1, h2 {
+    margin: 0 5px 5px 0;
+}
+.block, h1 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 0;
+    top: 0;
+}
+
+.block {
+    width: 20px;
+    height: 36px;
+    background: #0F0;
+}
+
+h1 {
+    width: 100%;
+    color: #FFF;
+    font-size: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+h2 {
+    color: #0F0;
+    line-height: 36px;
+    vertical-align: middle;
+    margin-left: 30px;
+}
