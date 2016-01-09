@@ -34,14 +34,6 @@ body {
     box-sizing: border-box;
 }
 
-.title:hover h1, .title:hover h2 {
-    color: #FF0;
-}
-
-.title:hover .block {
-    background: #FF0;
-}
-
 .block, h1, h2 {
     margin: 0 5px 5px 0;
 }
