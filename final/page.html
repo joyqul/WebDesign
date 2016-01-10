@@ -3,11 +3,109 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/page.css" rel="stylesheet" type="text/css">
+        <!-- Add jQuery library -->
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+        <script type="text/javascript" src="js/page.js"></script>
         <title>NCTU Dogs</title>
     </head>
-	</body>
+	<body>
+		<div class="black">
+		</div>
+		<div id="about">
+			<div class="content">
+				<div class="title">
+					<div class="empty"></div>
+					<div class="block"></div>
+					<h1>關於交大汪汪社</h1>
+				</div>
+				<section>
+					<h2>交大汪汪社秉持著以人為本的態度，目前對於校園內流浪狗的處理方針為</h2>
+					<ul>
+						<li>TNR (Trap, Neuter, Return)</li>
+						<li>以狗狗的地盤領域特性控制校內流浪狗數量</li>
+						<li>追縱狗狗的情況和施打疫苗以維持環境衛生安全</li>
+					</ul>
+					<br/>
+					<h2>關於交大的流浪狗</h2>
+					<ul>
+						<li>請勿任意餵食</li>
+						<li>紅項圈表示已結紮，無「校狗」含意</li>
+						<li>如果見到沒有戴項圈的狗逗留，或狗狗出現任何異狀，請和交大汪汪社聯絡</li>
+					</ul>
+					<br/>
+					<h2>聯絡方式</h2>
+					<a href="https://www.facebook.com/%E4%BA%A4%E5%A4%A7%E6%B1%AA%E6%B1%AA%E7%A4%BE-486262641434965">
+						<img src="images/facebook.svg" alt="" class="icon"/>
+					</a>
+				</section>
+			</div>
+		</div>
+		<div id="postcard">
+			<div class="content">
+				<div class="title">
+					<div class="empty"></div>
+					<div class="block"></div>
+					<h1>明信片</h1>
+				</div>
+				<section>
+					<h2>每年都會舉辦攝影比賽，得獎作品將印製成明信片販售。</h2>
+					<div class="box">
+						<a class="fancybox" rel="group" href="images/dog01.jpg" alt="dog01"> <img src="images/dog01.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+						<a class="fancybox" rel="group" href="images/dog02.jpg" alt="dog02"> <img src="images/dog02.jpg"/></a>
+					</div>
+					<div class="year">2015</div>
+					<div class="box"></div>
+					<div class="year">2014</div>
+					<div class="box"></div>
+					<div class="year">2013</div>
+				</section>
+			</div>
+		</div>
+		<div id="souvenir">
+			<div class="content">
+				<div class="title">
+					<div class="empty"></div>
+					<div class="block"></div>
+					<h1>紀念品</h1>
+				</div>
+				<section>
+					<div class="box">
+						<img src="images/dog02.jpg" alt=""/>
+						<article>Balabala</article>
+					</div>
+					<div class="year">2015</div>
+					<div class="box">
+					</div>
+					<div class="year">2014</div>
+					<div class="box">
+					</div>
+					<div class="year">2013</div>
+				</section>
+			</div>
+		</div>
+    </body>
 </html>

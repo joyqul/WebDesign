@@ -1,0 +1,130 @@
+@import url('normalize.css');
+* {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 5px;
+    line-height: 36px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+}
+
+body {
+    position: relative;
+}
+
+section {
+    position: relative;
+    padding: 10px;
+}
+
+.icon {
+    margin-left: 15px;
+    -webkit-filter:invert(100%);
+    filter:invert(100%);
+    width: 40px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+icon:hover {
+    -webkit-filter:sepia(1);
+    filter:sepia(1);
+}
+
+.title {
+    display: inline-block;
+    height: 40px;
+    border-bottom: 1px #FFF solid;
+}
+
+.black {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+}
+
+.block, h1{
+    margin: 0 5px 5px 0;
+}
+
+h2 {
+    margin: 10px;
+    color:rgb(255,255,194);
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.empty, .block, h1 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    top: 0;
+}
+
+.block {
+    width: 20px;
+    height: 36px;
+    background: #0F0;
+}
+
+.empty {
+    height: 36px;
+}
+
+/********* postcard ***********/
+.year {
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    color:#0F0;
+    display: inline-block;
+    height: 100px;
+}
+
+.box {
+    border-top: 2px solid #0F0;
+    display: inline-block;
+    width: 90%;
+}
+
+.box img {
+    width: 18%;
+    border-radius: 5px;
+}
+
+/********* blocks ************/
+#about {
+    background:url(../images/dog01.jpg) no-repeat fixed;
+}
+
+#postcard {
+    background:url(../images/dog03.jpg) no-repeat fixed;
+}
+
+#souvenir {
+    background:url(../images/dog04.jpg) no-repeat fixed;
+}
+
+#about, #postcard, #souvenir {
+    background-size: 100%;
+    width: 100%;
+    color: #FFF;
+    margin: 0 auto;
+    padding: 40px 0px;
+}

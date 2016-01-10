@@ -1,5 +1,10 @@
 @import url('normalize.css');
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     position: relative;
     overflow: hidden;
@@ -29,7 +34,6 @@ body {
 .title {
     display:block;
     position: relative;
-    padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -41,7 +45,6 @@ body {
     position: relative;
     display: inline-block;
     float: left;
-    padding: 0;
     top: 0;
 }
 
