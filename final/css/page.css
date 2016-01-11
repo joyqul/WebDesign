@@ -142,12 +142,14 @@ article {
     /*
     background:url(../images/dog01.jpg) no-repeat;
     */
+    background: rgba(255,0,0,.2);
 }
 
 #postcard {
     /*
     background:url(../images/dog03.jpg) no-repeat fixed;
     */
+    background: rgba(255,0,255,.2);
 }
 
 #souvenir {
@@ -189,7 +191,7 @@ article {
 }
 
 /******** MENU **************/
-.menu {
+.menu, .next {
     position:fixed;
     top: 20px;
     background:url(../images/menu.svg);
@@ -200,7 +202,9 @@ article {
     z-index: 100;
 }
 
-.menu:hover {
+.menu:hover, .next:hover {
+    width:40px;
+    height:40px;
     -webkit-filter:invert(90%);
     filter:invert(90%);
     cursor: pointer;

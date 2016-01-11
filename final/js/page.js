@@ -82,24 +82,32 @@ function re_win() {
     $(".black").outerWidth(w);
     $(".black").outerHeight(h);
     if (w > h) {
-        $(".menu").css({
-            left:w-60-$(".label").outerWidth()
-        });
         if ($(".menu").hasClass("focus")) {
             $(".label").outerWidth(Math.floor(w/4));
         }
+        else {
+            $(".label").outerWidth(0);
+            $(".label").outerHeight(0);
+        }
+        $(".menu").css({
+            left:w-60-$(".label").outerWidth()
+        });
         $(".label").outerHeight(h);
         $(".label").css({
             left: w-$(".label").outerWidth()
         });
     }
     else {
-        $(".menu").css({
-            left:w-60
-        });
         if ($(".menu").hasClass("focus")) {
             $(".label").outerHeight(Math.floor(h/2));
         }
+        else {
+            $(".label").outerWidth(0);
+            $(".label").outerHeight(0);
+        }
+        $(".menu").css({
+            left:w-60
+        });
         $(".label").outerWidth(w);
         $(".label").css({
             top:0+$(".label").outerHeight(),
