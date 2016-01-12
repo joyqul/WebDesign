@@ -85,17 +85,17 @@ function menu_toggle() {
             }, 350);
         }
     }
-    var trans = [ "about", "postcard", "souvenir" ];
-    var my_hash_id = change_hash(trans);
+    var trans = [ "about", "TNR", "postcard", "souvenir" ];
+    var my_hash_id = change_hash(trans)+1;
     $(".label a").eq(my_hash_id).addClass("chosen").siblings().removeClass("chosen");
 }
 
 function re_win() {
     var w = $(window).innerWidth();
     var h = $(window).innerHeight();
-    $(".empty").width(w/8);
+    $(".empty").width(w/10);
     $("section").css({
-        left: Math.floor(w/8)
+        left: Math.floor(w/10)
     });
     $(".black").outerWidth(w);
     $(".black").outerHeight(h);

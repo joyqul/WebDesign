@@ -140,27 +140,22 @@ article {
 
 /********* blocks ************/
 #about {
-    /*
-    background:url(../images/dog01.jpg) no-repeat;
-    */
     background: rgba(255,0,0,.2);
 }
 
+#TNR {
+    background: rgba(255,255,200,.4);
+}
+
 #postcard {
-    /*
-    background:url(../images/dog03.jpg) no-repeat fixed;
-    */
-    background: rgba(255,0,255,.2);
+    background: rgba(255,0,0,.2);
 }
 
 #souvenir {
-    /*
-    background:url(../images/dog04.jpg) no-repeat;
-    */
-    background: rgba(0,0,255,.2);
+    background: rgba(255,255,200,.4);
 }
 
-#about, #postcard, #souvenir {
+#about, #TNR, #postcard, #souvenir {
     display:block;
     background-size: 100%;
     width: 100%;
@@ -218,7 +213,7 @@ article {
 
 .label {
     position:fixed;
-    background: #333;
+    background: #222;
     z-index:200;
     width: 0;
     height: 0;
@@ -227,13 +222,14 @@ article {
 
 .label img {
     width: 95%;
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
+    -webkit-filter: sepia(100%); /* Chrome, Safari, Opera */
+    filter: sepia(100%);
+    border: 1px solid #000;
 }
 
 .label img:hover, .chosen img {
-    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-    filter: grayscale(0%);
+    -webkit-filter: sepia(0%); /* Chrome, Safari, Opera */
+    filter: sepia(0%);
     border: 1px solid #0F0;
 }
 
@@ -241,7 +237,12 @@ article {
     display:block;
     width:100%;
     text-align:center;
-    margin: 20px 0;
+    border-top: 40px solid #0F0;
+    padding: 20px;
+}
+
+.label h1:hover {
+    color:#0F0;
 }
 
 .black {
@@ -251,8 +252,4 @@ article {
     background: rgba(0,0,0,.8);
     z-index: 50;
     display:none;
-}
-
-.label .block {
-    width: 100%;
 }

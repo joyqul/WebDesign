@@ -22,11 +22,12 @@ body {
     z-index: -1;
 }
 
-.page, .pics a, .pics img {
+.page, .pics a{
     width: 100%;
 }
 
 .pics img {
+    margin: auto;
     opacity: 0.2;
     z-index: -1;
 }
@@ -67,4 +68,9 @@ h2 {
     line-height: 36px;
     vertical-align: middle;
     margin-left: 30px;
+}
+@media only screen and (min-width: 768px) {
+    .pics img {
+        width: 2000px;
+    }
 }
