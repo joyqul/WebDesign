@@ -90,7 +90,7 @@ function menu_toggle() {
     $(".label a").eq(my_hash_id).addClass("chosen").siblings().removeClass("chosen");
 }
 
-function re_win() {
+function re_win(horizontal) {
     var w = $(window).innerWidth();
     var h = $(window).innerHeight();
     $(".empty").width(w/10);
@@ -99,6 +99,9 @@ function re_win() {
     });
     $(".black").outerWidth(w);
     $(".black").outerHeight(h);
+    $(".background").css({
+        left:w-200
+    });
     if (w > h) {
         if ($(".menu").hasClass("focus")) {
             $(".label").outerWidth(Math.floor(w/4));
@@ -108,12 +111,14 @@ function re_win() {
             $(".label").outerHeight(0);
         }
         $(".menu").css({
+            top: 20,
             left:w-60-$(".label").outerWidth()
         });
         $(".label").outerHeight(h);
         $(".label").css({
             left: w-$(".label").outerWidth()
         });
+        return 1;
     }
     else {
         if ($(".menu").hasClass("focus")) {
@@ -124,15 +129,14 @@ function re_win() {
             $(".label").outerHeight(0);
         }
         $(".menu").css({
+            top: 20+$(".label").outerHeight(),
             left:w-60
         });
         $(".label").outerWidth(w);
         $(".label").css({
-            top:0+$(".label").outerHeight(),
+            top:0,
             left:0
         });
+        return 2;
     }
-    $(".background").css({
-        left:w-200
-    });
 }
