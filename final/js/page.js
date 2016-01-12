@@ -132,4 +132,7 @@ function re_win() {
             left:0
         });
     }
+    $(".background").css({
+        left:w-200
+    });
 }

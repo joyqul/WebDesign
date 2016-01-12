@@ -44,4 +44,7 @@ function re_win() {
             left: 20
         });
     }
+    $(".page").css({
+        height: h
+    });
 }

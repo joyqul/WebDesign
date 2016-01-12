@@ -26,6 +26,10 @@ body {
     width: 100%;
 }
 
+.page {
+    overflow: hidden;
+}
+
 .pics img {
     margin: auto;
     opacity: 0.2;

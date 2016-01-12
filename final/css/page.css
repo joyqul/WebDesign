@@ -24,6 +24,7 @@ section {
     width: 80%;
     position: relative;
     padding: 10px;
+    background: rgba(0,0,0,.8);
 }
 
 .icon {
@@ -63,7 +64,7 @@ h2 {
 
 ul {
     list-style-type: none;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .empty, .block, h1 {
@@ -188,7 +189,7 @@ article {
 }
 
 /******** MENU **************/
-.menu, .next {
+.menu{
     position:fixed;
     top: 20px;
     background:url(../images/menu.svg);
@@ -252,4 +253,14 @@ article {
     background: rgba(0,0,0,.8);
     z-index: 50;
     display:none;
+}
+
+/********* background *************/
+.background {
+    background: url(../images/background.png);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    z-index: 2;
 }
