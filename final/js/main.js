@@ -5,8 +5,7 @@ $(document).ready(function() {
         re_win();
 	});
     $(".pics").cycle({
-        fx: 'fade',
-        delay:-4000
+        fx: 'fade'
     });
 });
 

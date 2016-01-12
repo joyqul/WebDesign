@@ -33,7 +33,7 @@ body {
 
 .pics img {
     margin: auto;
-    opacity: 0.2;
+    opacity: 0.5;
     z-index: -1;
 }
 
