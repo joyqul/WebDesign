@@ -15,7 +15,22 @@ $(document).ready(function() {
     $(".menu").click(function() {
         menu_toggle();
     });
+    $(".paragraph").click(function() {
+        menu_toggle();
+    });
 });
+
+function change_hash(trans) {
+    var window_offset = $(window).scrollTop();
+    for (var i = trans.length-1; i >= 0; i--) {
+        var focus_obj = "#"+trans[i];
+        if (window_offset >= $(focus_obj).offset().top-200) {
+            document.location.hash = trans[i];
+            return i;
+        }
+    }
+    return 0;
+}
 
 function menu_toggle() {
     var h = $(window).innerHeight();
@@ -70,6 +85,9 @@ function menu_toggle() {
             }, 350);
         }
     }
+    var trans = [ "about", "postcard", "souvenir" ];
+    var my_hash_id = change_hash(trans);
+    $(".label a").eq(my_hash_id).addClass("chosen").siblings().removeClass("chosen");
 }
 
 function re_win() {

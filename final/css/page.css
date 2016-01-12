@@ -110,6 +110,7 @@ article {
     background: #000;
     padding:10px;
     border-radius:5px;
+    margin-bottom: 20px;
 }
 
 .box article {
@@ -156,6 +157,7 @@ article {
     /*
     background:url(../images/dog04.jpg) no-repeat;
     */
+    background: rgba(0,0,255,.2);
 }
 
 #about, #postcard, #souvenir {
@@ -216,14 +218,30 @@ article {
 
 .label {
     position:fixed;
-    background: #999;
+    background: #333;
     z-index:200;
     width: 0;
     height: 0;
+    text-align:center;
 }
 
 .label img {
-    width: 100%;
+    width: 95%;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+.label img:hover, .chosen img {
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+    border: 1px solid #0F0;
+}
+
+.label h1 {
+    display:block;
+    width:100%;
+    text-align:center;
+    margin: 20px 0;
 }
 
 .black {
@@ -233,4 +251,8 @@ article {
     background: rgba(0,0,0,.8);
     z-index: 50;
     display:none;
+}
+
+.label .block {
+    width: 100%;
 }
