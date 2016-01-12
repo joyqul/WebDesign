@@ -16,6 +16,9 @@ $(document).ready(function() {
         menu_toggle();
     });
     $(".paragraph").click(function() {
+        var target = $(this).attr("alt");
+        var top_s = $(target).offset().top;
+        $("html, body").animate({scrollTop: top_s}, 1000);
         menu_toggle();
     });
 });

@@ -8,6 +8,7 @@
 body {
     position: relative;
     overflow: hidden;
+    font-family: "微軟正黑體","Microsoft JhengHei",sans-serif;
 }
 
 .black, .pics a, .pics img {
