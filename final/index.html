@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <title>NCTU Dogs</title>
-    </head>
-    <body>
-        <div class="pics"> 
-            <a href="page.html#about" class="page">
-                <div class="title">
-                    <div class="block"></div>
-                    <h1>交大汪汪社</h1>
-                    <h2>關於交大汪汪社</h2>
-                </div>
-                <img src="images/dog01.jpg"/>
-            </a>
-            <a href="page.html#TNR" class="page">
-                <div class="title">
-                    <div class="block"></div>
-                    <h1>交大汪汪社</h1>
-                    <h2>TNR</h2>
-                </div>
-                <img src="images/dog02.jpg"/>
-            </a>
-            <a href="page.html#postcard" class="page">
-                <div class="title">
-                    <div class="block"></div>
-                    <h1>交大汪汪社</h1>
-                    <h2>明信片</h2>
-                </div>
-                <img src="images/dog03.jpg"/>
-            </a>
-            <a href="page.html#souvenir" class="page">
-                <div class="title">
-                    <div class="block"></div>
-                    <h1>交大汪汪社</h1>
-                    <h2>紀念品</h2>
-                </div>
-                <img src="images/dog04.jpg"/>
-            </a>
-        </div> 
-        <div class="black"></div>
-    </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+		<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<title>NCTU Dogs</title>
+	</head>
+	<body>
+		<section>
+			<h1>交大汪汪社</h1>
+			<div class="box">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<a href="page.html#about"><img src="images/dog01.jpg" /></a>
+						</li>
+						<li>
+							<a href="page.html#TNR"><img src="images/dog02.jpg" /></a>
+						</li>
+						<li>
+							<a href="page.html#postcard"><img src="images/dog03.jpg" /></a>
+						</li>
+						<li>
+							<a href="page.html#souvenir"><img src="images/dog04.jpg" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p>Click Pictures to Enter</p>
+		</section>
+	</body>
 </html>
