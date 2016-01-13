@@ -93,7 +93,7 @@ function menu_toggle() {
     $(".label a").eq(my_hash_id).addClass("chosen").siblings().removeClass("chosen");
 }
 
-function re_win(horizontal) {
+function re_win() {
     var w = $(window).innerWidth();
     var h = $(window).innerHeight();
     $(".empty").width(w/10);
@@ -102,9 +102,6 @@ function re_win(horizontal) {
     });
     $(".black").outerWidth(w);
     $(".black").outerHeight(h);
-    $(".background").css({
-        left:w-200
-    });
     if (w > h) {
         if ($(".menu").hasClass("focus")) {
             $(".label").outerWidth(Math.floor(w/4));
@@ -121,7 +118,6 @@ function re_win(horizontal) {
         $(".label").css({
             left: w-$(".label").outerWidth()
         });
-        return 1;
     }
     else {
         if ($(".menu").hasClass("focus")) {
@@ -140,6 +136,5 @@ function re_win(horizontal) {
             top:0,
             left:0
         });
-        return 2;
     }
 }

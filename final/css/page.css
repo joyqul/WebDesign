@@ -11,13 +11,12 @@
 h1 {
     padding: 0;
     margin: 0;
-    color: #FFF;
+    color: #1e1e1e;
 }
 
 body {
     position: relative;
     background:#333;
-    background-image:url(../images/texture.png);
     font-family: "微軟正黑體","Microsoft JhengHei",sans-serif;
 }
 
@@ -33,20 +32,20 @@ section {
     -webkit-filter:invert(100%);
     filter:invert(100%);
     width: 40px;
-    border: 1px solid #000;
+    border: 1px solid #1e1e1e;
     border-radius: 20px;
     padding: 5px;
 }
 
 .icon:hover {
-    -webkit-filter:sepia(1);
-    filter:sepia(1);
+    -webkit-filter:invert(0%);
+    filter:invert(0%);
 }
 
 .title {
     display: inline-block;
     height: 40px;
-    border-bottom: 1px #FFF solid;
+    border-bottom: 1px #1e1e1e solid;
 }
 
 .content {
@@ -60,7 +59,7 @@ section {
 
 h2 {
     margin: 10px;
-    color:rgb(255,255,194);
+    color:#ffff97;
 }
 
 ul {
@@ -78,7 +77,7 @@ ul {
 .block {
     width: 20px;
     height: 36px;
-    background: #0F0;
+    background: #b3ff66;
 }
 
 .empty {
@@ -88,13 +87,13 @@ ul {
 /********* postcard ***********/
 .year {
     display:block;
-    color:#0F0;
+    color:#b3ff66;
     text-align:right;
 }
 
 .box {
     display:block;
-    border-top: 2px solid #0F0;
+    border-top: 2px solid #b3ff66;
     display: inline-block;
     text-align: left;
     vertical-align:top;
@@ -109,7 +108,7 @@ ul {
 
 article {
     display: inline-block;
-    background: #000;
+    background: #1e1e1e;
     padding:10px;
     border-radius:5px;
     margin-bottom: 20px;
@@ -142,24 +141,23 @@ article {
 
 /********* blocks ************/
 #about {
-    background: rgba(255,0,0,.2);
+    background: #ffff97;
 }
 
 #TNR {
-    background: rgba(255,255,200,.4);
+    background: #fff;
 }
 
 #postcard {
-    background: rgba(255,0,0,.2);
+    background: #ffff97;
 }
 
 #souvenir {
-    background: rgba(255,255,200,.4);
+    background: #fff;
 }
 
 #about, #TNR, #postcard, #souvenir {
     display:block;
-    background-size: 100%;
     width: 100%;
     color: #FFF;
     margin: 0 auto;
@@ -196,16 +194,16 @@ article {
     background:url(../images/menu.svg);
     width:40px;
     height:40px;
-    -webkit-filter:invert(80%);
-    filter:invert(80%);
+    -webkit-filter:invert(40%);
+    filter:invert(40%);
     z-index: 100;
 }
 
-.menu:hover, .next:hover {
+.menu:hover {
     width:40px;
     height:40px;
-    -webkit-filter:invert(90%);
-    filter:invert(90%);
+    -webkit-filter:invert(60%);
+    filter:invert(60%);
     cursor: pointer;
 }
 
@@ -224,27 +222,28 @@ article {
 
 .label img {
     width: 95%;
-    -webkit-filter: sepia(100%); /* Chrome, Safari, Opera */
-    filter: sepia(100%);
-    border: 1px solid #000;
+    -webkit-filter: opacity(10%); /* Chrome, Safari, Opera */
+    filter: opacity(10%);
+    border: 1px solid #1e1e1e;
 }
 
 .label img:hover, .chosen img {
-    -webkit-filter: sepia(0%); /* Chrome, Safari, Opera */
-    filter: sepia(0%);
-    border: 1px solid #0F0;
+    -webkit-filter: opacity(100%); /* Chrome, Safari, Opera */
+    filter: opacity(100%);
+    border: 1px solid #b3ff66;
 }
 
 .label h1 {
     display:block;
+    color:#fff;
     width:100%;
     text-align:center;
-    border-top: 40px solid #0F0;
+    border-top: 40px solid #b3ff66;
     padding: 20px;
 }
 
 .label h1:hover {
-    color:#0F0;
+    color:#b3ff66;
 }
 
 .black {
@@ -260,8 +259,14 @@ article {
 .background {
     background: url(../images/background.png);
     position: absolute;
-    top: 0;
+    top:0;
+    left:0;
     height: 100%;
     width: 200px;
     z-index: 2;
+}
+
+footer p {
+    text-align:center;
+    color:#FFF;
 }
