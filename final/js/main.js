@@ -11,4 +11,7 @@ $(document).ready(function() {
 function re_win() {
     var w = $(window).innerWidth();
     var h = $(window).innerHeight();
+    $(".background").css({
+        top: h-200
+    });
 }
