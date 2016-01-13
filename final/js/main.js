@@ -4,7 +4,8 @@ $(document).ready(function() {
         re_win();
 	});
     $(".flexslider").flexslider({
-        animation:"slide"
+        animation:"slide",
+        controlNav: "thumbnails"
     });
 });
 

@@ -23,8 +23,9 @@ body {
 section {
     width: 80%;
     position: relative;
-    padding: 10px;
+    padding: 20px;
     background: rgba(0,0,0,.8);
+    border-radius: 10px;
 }
 
 .icon {
@@ -97,13 +98,14 @@ ul {
     display: inline-block;
     text-align: left;
     vertical-align:top;
-    padding: 5px;
+    padding: 25px;
     width: 100%;
 }
 
 .box img {
-    border-radius: 5px;
+    border-radius: 100px;
     margin: 20px 20px 0 0;
+    border: 2px solid #FFF;
 }
 
 article {
@@ -121,6 +123,7 @@ article {
 .box article img {
     width: 100%;
     margin: 0;
+    border-radius: 10px;
 }
 
 .box article h2 {
