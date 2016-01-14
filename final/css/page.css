@@ -106,7 +106,7 @@ ul {
 .box a img {
     border-radius: 100px;
     margin: 20px 20px 0 0;
-    border: 2px solid #FFF;
+    border: 2px solid #000;
     -webkit-filter:opacity(60%);
     filter:opacity(60%);
 }
@@ -114,6 +114,7 @@ ul {
 .box a img:hover {
     -webkit-filter:opacity(100%);
     filter:opacity(100%);
+    border-color:#b3ff66;
 }
 
 article {
@@ -193,7 +194,7 @@ article {
     background:url(../images/close.svg);
 }
 
-.label {
+nav {
     position:fixed;
     background: #222;
     z-index:200;
@@ -202,14 +203,14 @@ article {
     text-align:center;
 }
 
-.label img {
+nav img {
     width: 95%;
     -webkit-filter: opacity(10%); /* Chrome, Safari, Opera */
     filter: opacity(10%);
     border: 1px solid #1e1e1e;
 }
 
-.label img:hover, .chosen img {
+nav img:hover, .chosen img {
     -webkit-filter: opacity(100%); /* Chrome, Safari, Opera */
     filter: opacity(100%);
     border: 1px solid #b3ff66;

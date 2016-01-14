@@ -1,7 +1,7 @@
 $(document).ready(function() {
     re_win();
     $(".fancybox").fancybox();
-    $(".label").niceScroll({cursorcolor:"#333",cursorwidth:"10px"});
+    $("nav").niceScroll({cursorcolor:"#333",cursorwidth:"10px"});
     $(".fancybox").fancybox({
         openEffect:'none',
         clossEffect: 'none'
@@ -56,7 +56,7 @@ function menu_toggle() {
             $(".menu").animate({
                 left: addEvent
             }, 350);
-            $(".label").animate({
+            $("nav").animate({
                 width: minusEvent,
                 left: addEvent
             }, 350);
@@ -65,7 +65,7 @@ function menu_toggle() {
             $(".menu").animate({
                 top: minusEvent
             }, 350);
-            $(".label").animate({
+            $("nav").animate({
                 height: minusEvent
             }, 350);
         }
@@ -77,7 +77,7 @@ function menu_toggle() {
             $(".menu").animate({
                 left:minusEvent
             }, 350);
-            $(".label").animate({
+            $("nav").animate({
                 width: addEvent,
                 left: minusEvent
             }, 350);
@@ -86,14 +86,14 @@ function menu_toggle() {
             $(".menu").animate({
                 top: addEvent
             }, 350);
-            $(".label").animate({
+            $("nav").animate({
                 height: addEvent
             }, 350);
         }
     }
     var trans = [ "about", "TNR", "postcard", "souvenir" ];
     var my_hash_id = change_hash(trans)+1;
-    $(".label a").eq(my_hash_id).addClass("chosen").siblings().removeClass("chosen");
+    $("nav a").eq(my_hash_id).addClass("chosen").siblings().removeClass("chosen");
 }
 
 function re_win() {
@@ -107,35 +107,35 @@ function re_win() {
     $(".black").outerHeight(h);
     if (w > h) {
         if ($(".menu").hasClass("focus")) {
-            $(".label").outerWidth(Math.floor(w/4));
+            $("nav").outerWidth(Math.floor(w/4));
         }
         else {
-            $(".label").outerWidth(0);
-            $(".label").outerHeight(0);
+            $("nav").outerWidth(0);
+            $("nav").outerHeight(0);
         }
         $(".menu").css({
             top: 20,
-            left:w-60-$(".label").outerWidth()
+            left:w-60-$("nav").outerWidth()
         });
-        $(".label").outerHeight(h);
-        $(".label").css({
-            left: w-$(".label").outerWidth()
+        $("nav").outerHeight(h);
+        $("nav").css({
+            left: w-$("nav").outerWidth()
         });
     }
     else {
         if ($(".menu").hasClass("focus")) {
-            $(".label").outerHeight(Math.floor(h/4*3));
+            $("nav").outerHeight(Math.floor(h/4*3));
         }
         else {
-            $(".label").outerWidth(0);
-            $(".label").outerHeight(0);
+            $("nav").outerWidth(0);
+            $("nav").outerHeight(0);
         }
         $(".menu").css({
-            top: 20+$(".label").outerHeight(),
+            top: 20+$("nav").outerHeight(),
             left:w-60
         });
-        $(".label").outerWidth(w);
-        $(".label").css({
+        $("nav").outerWidth(w);
+        $("nav").css({
             top:0,
             left:0
         });
