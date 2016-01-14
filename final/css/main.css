@@ -8,14 +8,13 @@
     text-decoration:none;
 }
 
-h1 {
-    color:#1e1e1e;
-    padding:40px 0 20px 0;
-    font-size:36px;
-    margin:0;
-    line-height:36px;
-    vertical-align:bottom;
-    letter-spacing: 5px;
+.logo {
+    background:url(../images/LOGO.png) no-repeat;
+    background-size: 100%;
+    width: 250px;
+    height: 60px;
+    margin:auto;
+    margin-top:20px;
 }
 
 p {

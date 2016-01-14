@@ -241,19 +241,28 @@ article {
     -webkit-filter: opacity(100%); /* Chrome, Safari, Opera */
     filter: opacity(100%);
     border: 1px solid #b3ff66;
+    cursor:pointer;
 }
 
-.label h1 {
+.logo {
     display:block;
-    color:#fff;
+    background:url(../images/pageLOGO.png) no-repeat;
     width:100%;
-    text-align:center;
-    border-top: 40px solid #b3ff66;
-    padding: 20px;
+    max-width: 250px;
+    height: 50px;
+    background-size:200%;
+    margin:auto;
 }
 
-.label h1:hover {
-    color:#b3ff66;
+.logo:hover {
+    background-position:100% 0%;
+}
+
+.line {
+    width:100%;
+    display:block;
+    border-top: 40px solid #b3ff66;
+    padding:20px;
 }
 
 .black {
