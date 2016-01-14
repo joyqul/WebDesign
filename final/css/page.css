@@ -138,28 +138,13 @@ article {
     display:block;
 }
 
-.col {
-    -webkit-column-count: 3; /* chrome, safari, opera */
-	-moz-column-count: 3; /* firefox */
-	column-count: 3;
-	
-	-webkit-column-gap: 4px; /* chrome, safari, opera */
-	-moz-column-gap: 4px; /* firefox */
-	column-gap: 4px;
-    
-}
-
 /********* blocks ************/
-#about {
+#about,#postcard {
     background: #ffff97;
 }
 
-#TNR {
+#TNR,#souvenir {
     background: #fff;
-}
-
-#postcard {
-    background: #ffff97;
 }
 
 #souvenir {
@@ -176,25 +161,12 @@ article {
 }
 
 /********* RWD **************/
-.row {
-    width:100%;
-}
-.row:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 @media only screen and (min-width: 768px) {
     .box article {
         width: 30%;
         float:left;
         margin: 10px;
     }
-}
-
-@media only screen and (min-width: 1200px) {
-
 }
 
 /******** MENU **************/

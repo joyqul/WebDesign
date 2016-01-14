@@ -21,6 +21,7 @@ p {
     color:#1e1e1e;
     border-top: 1px solid #1e1e1e;
     padding: 5px;
+    background:#FFF;
 }
 
 body {
@@ -41,15 +42,11 @@ body {
 
 .flex-caption {
     background:#1e1e1e;
-    color:#fff;
+    color:#b3ff66;
     text-shadow:0 -1px 0 rgba(0,0,0,.3);
     height:40px;
     line-height:40px;
     margin-top:4px;
-}
-
-.flex-caption:hover {
-    color:#b3ff66;
 }
 
 .background {
@@ -58,5 +55,5 @@ body {
     width:100%;
     height:200px;
     z-index: -1;
-    opacity:0.5;
+    opacity:0.8;
 }
