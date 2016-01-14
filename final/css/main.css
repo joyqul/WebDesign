@@ -21,7 +21,7 @@ p {
     color:#1e1e1e;
     border-top: 1px solid #1e1e1e;
     padding: 5px;
-    background:#FFF;
+    background:rgba(255,255,255,.8);
 }
 
 body {

@@ -13,6 +13,6 @@ function re_win() {
     var w = $(window).innerWidth();
     var h = $(window).innerHeight();
     $(".background").css({
-        top: h-200
+        top: h-220
     });
 }
