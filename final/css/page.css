@@ -6,6 +6,7 @@
     line-height: 36px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 h1 {
@@ -30,8 +31,8 @@ section {
 
 .icon {
     margin-left: 15px;
-    -webkit-filter:invert(100%);
-    filter:invert(100%);
+    -webkit-filter:invert(60%);
+    filter:invert(60%);
     width: 40px;
     border: 1px solid #1e1e1e;
     border-radius: 20px;
@@ -39,8 +40,8 @@ section {
 }
 
 .icon:hover {
-    -webkit-filter:invert(0%);
-    filter:invert(0%);
+    -webkit-filter:invert(100%);
+    filter:invert(100%);
 }
 
 .title {
@@ -102,10 +103,17 @@ ul {
     width: 100%;
 }
 
-.box img {
+.box a img {
     border-radius: 100px;
     margin: 20px 20px 0 0;
     border: 2px solid #FFF;
+    -webkit-filter:opacity(60%);
+    filter:opacity(60%);
+}
+
+.box a img:hover {
+    -webkit-filter:opacity(100%);
+    filter:opacity(100%);
 }
 
 article {
@@ -123,7 +131,6 @@ article {
 .box article img {
     width: 100%;
     margin: 0;
-    border-radius: 10px;
 }
 
 .box article h2 {
@@ -272,4 +279,17 @@ article {
 footer p {
     text-align:center;
     color:#FFF;
+    font-size: 10px;
+}
+
+.top {
+    position:relative;
+    border-bottom: 1px solid #FFF;
+    z-index:200;
+}
+
+.top:hover {
+    color:#b3ff66;
+    cursor:pointer;
+    font-size:16px;
 }

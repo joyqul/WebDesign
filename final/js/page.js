@@ -21,6 +21,9 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: top_s}, 1000);
         menu_toggle();
     });
+    $(".top").click(function() {
+        $("html, body").animate({scrollTop: 0}, 1000);
+    });
 });
 
 function change_hash(trans) {
@@ -40,7 +43,7 @@ function menu_toggle() {
     var w = $(window).innerWidth();
     var my_width = Math.floor(w/4);
     if (h >= w) {
-        my_width = Math.floor(h/2);
+        my_width = Math.floor(h/4*3);
     }
     var addEvent = "+=";
     var minusEvent = "-=";
@@ -121,7 +124,7 @@ function re_win() {
     }
     else {
         if ($(".menu").hasClass("focus")) {
-            $(".label").outerHeight(Math.floor(h/2));
+            $(".label").outerHeight(Math.floor(h/4*3));
         }
         else {
             $(".label").outerWidth(0);
