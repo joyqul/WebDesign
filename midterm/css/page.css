@@ -1,0 +1,258 @@
+@charset "utf-8";
+@import url("menu.css");
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(89,62,62);
+    background-image: url("../images/texture.png");
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*================== header =================*/
+
+header {
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,.4);
+}
+
+.les {
+    display: block;
+    position: relative;
+    background-image: url("../images/les.png");
+    background-repeat: repeat-x;
+    background-size: 100px 85px;
+    width: 100%;
+    height: 80px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin: 0;
+}
+
+#h_c {
+    width: 80%;
+    margin: auto;
+    top:0;
+}
+
+#h_c img {
+    height: 80px;
+    width: auto;
+    border-radius: 0;
+    padding: 10px;
+    float: left;
+}
+
+#h_c img:hover {
+    -webkit-filter: saturate(400%);
+    filter: saturate(400%);
+}
+
+nav {
+    position: relative;
+    float: right;
+    margin: 20px;
+    z-index: 200;
+}
+
+.highlight {
+    -webkit-filter: saturate(400%);
+    filter: saturate(400%);
+}
+
+/*================ icons ===================*/
+
+.facebook, .twitter, .google {
+	background-image: url("../images/icons.png");
+	background-size: auto 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    float: right;
+    margin: 0px 3px 0px 0px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 5px black;
+    -moz-box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px black;
+}
+
+.twitter {
+    background-position: -30px 0px;
+}
+
+.google {
+    background-position: -60px 0px;
+    clear: both;
+}
+
+.facebook:hover, .twitter:hover, .google:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-box-shadow: 1px 1px 5px white;
+    -moz-box-shadow: 1px 1px 5px white;
+    box-shadow: 1px 1px 5px white;
+}
+
+.icons {
+    width: 80%;
+    height: 40px;
+    padding: 0;
+    margin: auto;
+}
+
+/*================ section =================*/
+
+h1, h2{
+    color: #FFF;
+    background:rgb(89,62,62);
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-image: url("../images/texture.png");
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+section {
+    width: 80%;
+    height: auto;
+    margin: auto;
+	background: rgba(255,173,244,.5);
+    border-radius: 10px;
+    -webkit-box-sizing: border-box; /* prefix for safari */
+    -moz-box-sizing: border-box; /* prefix for firefox */
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section img {
+    border-radius: 10px;
+}
+
+article {
+    position: relative;
+    display: block;
+    -webkit-box-sizing: border-box; /* prefix for safari */
+    -moz-box-sizing: border-box; /* prefix for firefox */
+    box-sizing: border-box;
+    padding: 0px 30px;
+    min-height: 480px;
+}
+
+.large {
+    min-height: 900px;
+}
+
+.image_box{
+    display: inline;
+    width: 400px;
+    float: right;
+    margin-left: 20px;
+}
+
+.image_box img {
+    width: 400px;
+    height: auto;
+}
+
+/*================== google map =======================*/
+
+#map {
+    width: 750px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+/*=================== picture boxes =====================*/
+
+.box {
+    position: relative;
+    display: block;
+    margin: 20px 0px;
+    float: left;
+    width: 100%;
+    height: auto;
+    border: solid 10px rgb(89,62,62);
+    border-width: 3px 0px 0px 3px;
+}
+
+.min_box {
+    float: left;
+    height: 400px;
+    width: 25%;
+    overflow: hidden;
+    border: solid 10px rgb(89,62,62);
+    border-width: 0px 3px 3px 0px;
+    -webkit-box-sizing: border-box; /* prefix for safari */
+    -moz-box-sizing: border-box; /* prefix for firefox */
+    box-sizing: border-box;
+    background:#FFF;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+.black {
+    position: absolute;
+    height: 400px;
+    width: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition:visibility 0s, opacity 0.5s ease;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+.black p {
+    display: none;
+    padding: 20px;
+}
+
+.min_box:hover img {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    width: 105%;
+}
+
+.min_box:hover .black {
+    width: 25%;
+    background: rgba(0,0,0,.9);
+    z-index: 100;
+    visibility: visible;
+    opacity: 1;
+}
+
+.min_box:hover .black p {
+    display: inline-block;
+    line-height: 50px;
+    color: #FFF;
+}
+
+/*=================== footer =================*/
+footer {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+footer p {
+    text-align: center;
+    color: #FFF;
+}

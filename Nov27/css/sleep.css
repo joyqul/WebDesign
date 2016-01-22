@@ -1,0 +1,47 @@
+.sleep {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 190px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .1);
+    border-radius:50px;
+}
+
+.sniff {
+    top: 50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, .4);
+    /*border-radius: 80px 100px 0px 200px/ 100px 60px 0px 100px;*/
+    border-radius: 80px 100px 0px 200px/ 100px 60px 0px 100px;
+}
+
+.head {
+    position: absolute;
+    top: 90px;
+    left: 80px;
+    height: 100px;
+    width: 120px;
+    background: #000;
+    border-radius: 50px 50px 0px 0px/ 20px 20px 0px 0px;
+}
+
+.lear, .rear {
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    left: 80px;
+    border-radius: 15px / 50px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #000;
+}
+
+.rear {
+    left: 150px;
+}

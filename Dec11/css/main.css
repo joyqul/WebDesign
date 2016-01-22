@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+}
+
+body {
+    background-image: url("../images/texture.png");
+}
+
+header{
+    padding:15px 0px;
+    background: rgba(0, 150, 255, .7);
+    color:#fff;
+    text-align:center;
+}
+
+nav{
+    width:100%;
+    margin:auto;
+    background:#000;
+    text-align:center;
+    display: none;
+}
+
+nav ul{
+    margin:0;
+}
+
+nav ul li{
+    display:block;
+    padding: 10px 0px;
+    border-bottom: solid #666 1px;
+}
+
+nav ul li:hover {
+    background: #333;
+}
+
+nav ul li a{
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    padding:0px 30px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+}
+
+p{
+    padding:10px;
+    background:rgba(255,255,255,.7);	
+}
+
+img{
+    width:100%;	
+    margin: 10px;
+}
+
+.menu {
+    width:30px;
+    height:30px;
+    background:url(../images/menu.png);
+    display:block;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+
+.menu:hover {
+    cursor:pointer;
+}
+
+.add {
+    border-bottom: rgb(0,150,255) 3px solid;
+    background: #333;
+}
+
+/*===============rwd details===============*/
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For phone */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    nav {
+        display:block;
+        padding: 20px 0px;
+    }
+    nav ul li {
+        display: inline;
+        border-bottom: 0px;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    nav {
+        display:block;
+        padding: 20px 0px;
+    }
+    nav ul li {
+        display: inline;
+        border-bottom: 0px;
+    }
+    .menu {
+        display: none;
+    }
+}

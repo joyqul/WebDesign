@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	height:100%;
+	height:auto;
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體", "Microsoft JhengHei";
+	background:#eee;
+	display: -webkit-flex;
+  	display: flex;
+	flex-wrap: wrap;
+}
+
+aside{
+	width:200px;
+}
+
+section{
+	-webkit-flex: 1; /* Safari 6.1+ */
+    -ms-flex: 1; /* IE 10 */ 
+    flex: 1;
+	position:relative;
+}
+
+footer{
+	width:100%;
+	font-size:16px;
+	text-align:center;
+	padding:10px 0px;
+}
+
+/*===========others============*/
+
+.outer{
+	float:left;
+	display:none;
+}
+
+.box{
+	width:100%;
+	height:100px;
+	background: #333;
+	color:#666;
+	border-bottom:solid 1px #666;
+	font-size:50px;
+	text-align: center;
+	line-height:100px;
+}
+
+.box:hover, .add{
+	color:#9FF;
+	background:#000;
+	cursor:pointer;	
+}
+
+.con{
+    position: relative;
+	float:left;
+	width:300px;
+	height:420px;
+	margin:20px;
+	background:#fff;
+	box-shadow: 2px 2px 5px #ccc;
+    overflow: hidden;
+}
+
+.con img{
+	width:100%;	
+}
+
+.con:hover .black, .con:hover .text, .con:hover .info, .con:hover .fav{
+    display: block;
+}
+
+.text, .info{
+    position: absolute;
+    top: 0;
+    left: 0;
+	padding:10px 10px;
+	color:#9FF;
+	font-size:24px;
+	word-wrap:break-word;
+	box-sizing:border-box;
+    display: none;
+}
+
+.info{
+    top: 40px;
+    color: #CCC;
+	font-size:16px;
+}
+
+.fav{
+    position: absolute;
+    top: 390px;
+    left: 270px;
+	width:25px;
+	height:25px;
+	margin-right:10px;
+	background:url(../images/love.png) 0px 0px;
+    display: none;
+}
+
+.fav:hover{
+	cursor:pointer;
+	background:url(../images/love.png) -25px 0px;
+}
+
+.loading{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100px;
+	height:100px;
+	background:url(../images/loading.gif);
+	display:none;
+}
+
+.black {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.9);
+    display: none;
+}

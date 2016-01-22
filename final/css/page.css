@@ -1,0 +1,277 @@
+@import url('normalize.css');
+* {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 5px;
+    line-height: 36px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: #1e1e1e;
+}
+
+body {
+    position: relative;
+    background:#333;
+    font-family: "微軟正黑體","Microsoft JhengHei",sans-serif;
+}
+
+section {
+    width: 80%;
+    position: relative;
+    padding: 20px;
+    background: rgba(0,0,0,.8);
+    border-radius: 10px;
+}
+
+.icon {
+    margin-left: 15px;
+    -webkit-filter:invert(60%);
+    filter:invert(60%);
+    width: 40px;
+    border: 1px solid #1e1e1e;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.icon:hover {
+    -webkit-filter:invert(100%);
+    filter:invert(100%);
+}
+
+.title {
+    display: inline-block;
+    height: 40px;
+    border-bottom: 1px #1e1e1e solid;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+}
+
+.block, h1{
+    margin: 0 5px 5px 0;
+}
+
+h2 {
+    margin: 10px;
+    color:#ffff97;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.empty, .block, h1 {
+    position: relative;
+    display: inline-block;
+    float: left;
+    top: 0;
+}
+
+.block {
+    width: 20px;
+    height: 36px;
+    background: #b3ff66;
+}
+
+.empty {
+    height: 36px;
+}
+
+/********* postcard ***********/
+.year {
+    display:block;
+    color:#b3ff66;
+    text-align:right;
+}
+
+.box {
+    display:block;
+    border-top: 2px solid #b3ff66;
+    display: inline-block;
+    text-align: left;
+    vertical-align:top;
+    padding: 25px;
+    width: 100%;
+}
+
+.box a img {
+    border-radius: 100px;
+    margin: 20px 20px 0 0;
+    border: 2px solid #000;
+    -webkit-filter:opacity(60%);
+    filter:opacity(60%);
+}
+
+.box a img:hover {
+    -webkit-filter:opacity(100%);
+    filter:opacity(100%);
+    border-color:#b3ff66;
+}
+
+article {
+    display: inline-block;
+    background: #1e1e1e;
+    padding:10px;
+    border-radius:5px;
+    margin-bottom: 20px;
+}
+
+.box article {
+    width: 100%;
+}
+
+.box article img {
+    width: 100%;
+    margin: 0;
+}
+
+.box article h2 {
+    margin: 0;
+    display:block;
+}
+
+/********* blocks ************/
+#about,#postcard {
+    background: #ffff97;
+}
+
+#TNR,#souvenir {
+    background: #fff;
+}
+
+#souvenir {
+    background: #fff;
+}
+
+#about, #TNR, #postcard, #souvenir {
+    display:block;
+    width: 100%;
+    color: #FFF;
+    margin: 0 auto;
+    padding: 80px 0;
+    z-index:0;
+}
+
+/********* RWD **************/
+@media only screen and (min-width: 768px) {
+    .box article {
+        width: 30%;
+        float:left;
+        margin: 10px;
+    }
+}
+
+/******** MENU **************/
+.menu{
+    position:fixed;
+    top: 20px;
+    background:url(../images/menu.svg);
+    width:40px;
+    height:40px;
+    -webkit-filter:invert(40%);
+    filter:invert(40%);
+    z-index: 100;
+}
+
+.menu:hover {
+    width:40px;
+    height:40px;
+    -webkit-filter:invert(60%);
+    filter:invert(60%);
+    cursor: pointer;
+}
+
+.focus {
+    background:url(../images/close.svg);
+}
+
+nav {
+    position:fixed;
+    background: #222;
+    z-index:200;
+    width: 0;
+    height: 0;
+    text-align:center;
+}
+
+nav img {
+    width: 95%;
+    -webkit-filter: opacity(10%); /* Chrome, Safari, Opera */
+    filter: opacity(10%);
+    border: 1px solid #1e1e1e;
+}
+
+nav img:hover, .chosen img {
+    -webkit-filter: opacity(100%); /* Chrome, Safari, Opera */
+    filter: opacity(100%);
+    border: 1px solid #b3ff66;
+    cursor:pointer;
+}
+
+.logo {
+    display:block;
+    background:url(../images/pageLOGO.png) no-repeat;
+    width:100%;
+    max-width: 250px;
+    height: 50px;
+    background-size:200%;
+    margin:auto;
+}
+
+.logo:hover {
+    background-position:100% 0%;
+}
+
+.line {
+    width:100%;
+    display:block;
+    border-top: 40px solid #b3ff66;
+    padding:20px;
+}
+
+.black {
+    position:fixed;
+    top: 0;
+    left:0;
+    background: rgba(0,0,0,.8);
+    z-index: 50;
+    display:none;
+}
+
+/********* background *************/
+.background {
+    background: url(../images/background.png);
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 200px;
+    z-index: 2;
+}
+
+footer p {
+    text-align:center;
+    color:#FFF;
+    font-size: 10px;
+}
+
+.top {
+    position:relative;
+    border-bottom: 1px solid #FFF;
+    z-index:200;
+}
+
+.top:hover {
+    color:#b3ff66;
+    cursor:pointer;
+    font-size:16px;
+}

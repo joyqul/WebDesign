@@ -1,0 +1,131 @@
+.rabbit {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 400px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #DDD;
+}
+
+.rabbit:hover {
+    cursor: crosshair;
+}
+
+.body {
+    position: absolute;
+    height: 200px;
+    width: 120px;
+    top: 90px;
+    left: 50px;
+    border-radius: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.ear, .leg, .lhand, .rhand {
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    left: 50px;
+    border-radius: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.leg {
+    top: 280px;
+    height: 80px;
+}
+
+.eye {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    top: 110px;
+    left: 70px;
+    z-index: 30;
+}
+
+.nose {
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    border-radius: 8px;
+    top: 124px;
+    left: 96px;
+    z-index: 30;
+}
+
+.mouse {
+    position: absolute;
+    width: 26px;
+    height: 22px;
+    left: 91px;
+    top: 120px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    z-index: 30;
+}
+
+.lhand, .rhand {
+    left: 15px;
+    height: 140px;
+    top: 142px;
+}
+
+.rhand {
+    left: 155px;
+}
+
+.roatate_left {
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+}
+
+.rotate_right {
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg);
+}
+
+.right {
+    left: 120px;
+}
+
+.black {
+    background: #000;
+}
+
+.pink {
+    background: #FAF;
+}
+
+.mblack {
+    border-color: #000;
+}
+
+.mpink {
+    border-color: #FAF;
+}
+
+.shadow {
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    background: gray;
+    -moz-border-radius: 90px / 30px;
+    -webkit-border-radius: 90px / 30px;
+    border-radius: 90px / 30px;
+    top: 320px;
+    left: 20px;
+    z-index: 10;
+}
